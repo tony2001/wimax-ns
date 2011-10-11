@@ -1969,4 +1969,5 @@ KDAPI_RESULT KDAPI_RestartDriverConnection()
 	stop_sending_indication();
 	start_sending_indication();
 	Act_DriverDeviceStatus(DRIVER_UP);
+	return KDAPI_SUCCESS;
 }

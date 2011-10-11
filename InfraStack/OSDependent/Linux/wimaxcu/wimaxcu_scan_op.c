@@ -904,4 +904,5 @@ int wimaxcu_stop_scan(WIMAX_API_DEVICE_ID_P p_device_id)
 		}
 			
 	}
+	return 0;
 }
