@@ -127,7 +127,7 @@ void print_callstack_to_file(int sig, siginfo_t *info, void *secret)
 	if(OSAL_fopen(&fp, gcLogFilePathName, "a", 0) < 0) {
 		syslog(LOG_ERR, "Got signal %d, faulty address is %p, from %p", 
 		       sig, info->si_addr, trace[0]);
-		syslog(LOG_ERR, "Could not open a file %s to log call stack");
+		syslog(LOG_ERR, "Could not open a file %s to log call stack", gcLogFilePathName);
 		// printf("Came here %d\n", __LINE__);
   		return;
 	}
