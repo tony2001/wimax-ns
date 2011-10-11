@@ -1438,12 +1438,12 @@ WIMAX_API_RET WIMAX_API WiMaxAPIClose(WIMAX_API_DEVICE_ID_P pDeviceId)
 	//	checkNamedEventHandle = NULL;
 	//}
 
-	OSAL_wait_event(checkEventsHandle, THREAD_JOIN_WAIT);
-	if (checkEventsHandle != NULL)
-	{
-		OSAL_kill_thread(checkEventsHandle);
-		checkEventsHandle = NULL;
-	}
+	//OSAL_wait_event(checkEventsHandle, THREAD_JOIN_WAIT);
+	//if (checkEventsHandle != NULL)
+	//{
+	//	OSAL_kill_thread(checkEventsHandle);
+	//	checkEventsHandle = NULL;
+	//}
 
 	if (privilege == WIMAX_API_PRIVILEGE_READ_WRITE)
 	{
