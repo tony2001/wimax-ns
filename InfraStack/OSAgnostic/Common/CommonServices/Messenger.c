@@ -199,7 +199,7 @@ void Messenger_FinalizeInternalResources()
 	{
 		TRACE(TR_MOD_MESSENGER, TR_SEV_NOTICE,"Messenger_FinalizeInternalResources can't lock");
 	}
-	g_msng_MutexQ = INVALID_HANDLE_VALUE;
+	g_msng_MutexQ = (OSAL_mutex_t)INVALID_HANDLE_VALUE;
 
 	if (g_msng_hCanStop != NULL)
 	{
