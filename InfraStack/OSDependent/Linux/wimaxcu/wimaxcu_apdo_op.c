@@ -470,13 +470,13 @@ void wimaxcu_check_for_apdo_updates(WIMAX_API_DEVICE_ID_P p_device_id)
 	WIMAX_API_RET wmxStatus;
 #if 0
 	wmxStatus = APDOupdates(p_device_id, retbuffer, NAME_MAX);
-#endif
 	if (wmxStatus == WIMAX_API_RET_SUCCESS) {
 		if (retbuffer[0] != 0)
 			printf
 			    ("\nAPDO Updates are Available. Please run \"wimaxcu update\"\n\n");
 	}
 
+#endif
 }
 
 /*
