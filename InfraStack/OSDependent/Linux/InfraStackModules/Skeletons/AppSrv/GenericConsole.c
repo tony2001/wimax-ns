@@ -115,7 +115,7 @@ void print_callstack_to_file(int sig, siginfo_t *info, void *secret)
 		syslog(LOG_WARNING, "Couldn't get backtrace information\n");
   	/* overwrite sigaction with caller's address */
   	trace[1] = (void *) trace[0];
-	messages[0] = NULL;
+
   	messages = backtrace_symbols(trace, trace_size);
 
 	res = GetConfig_LogPath(gcLogFilePathName, MAX_FILENAME_LEN);   
